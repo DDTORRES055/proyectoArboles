@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #container {
@@ -11,11 +12,33 @@ body {
 }
 
 #options {
+    text-align: center;
     position: relative;
-    display: inline-block;
-    font-size: 2em;
+    display: block;
 }
 
+.inputs{
+    font-size: 120%;
+    background-color: #40404060;
+    border-radius: 5px;
+    color: #AAA;
+}
+
+button:hover{
+    background-color: #AAA;
+    color: #303030;
+    cursor: pointer;
+}
+
+button:active{
+    background-color: #777;
+    color: #101010;
+}
+
+#response {
+    font-size: 120%;
+    margin-top: 40px;
+}
 
 /* ---- particles.js container ---- */
 

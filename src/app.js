@@ -103,10 +103,12 @@ var Edges = cy.json().elements.edges;
 var currentId = Nodes[Nodes.length - 1].data.id;
 
 function addNode() {
+    var ultimoNodo = Nodes[Nodes.length - 1];
+
     cy.add({
         group: 'nodes',
         data: { id: ++currentId, name: document.getElementById('nameNode').value },
-        position: { x: 200, y: 200 }
+        position: { x: ultimoNodo.position.x-50, y: ultimoNodo.position.y }
     });
 
     refresh();
