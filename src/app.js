@@ -162,7 +162,7 @@ function testTree() {
     }
 }
 
-cy.on('mousemove', function(evt) {
+cy.on('tapend', function(evt) {
     refresh();
 });
 
@@ -280,7 +280,7 @@ function clear() {
         }
     });
 
-    cy.on('mouseout', function(evt) {
+    cy.on('tapend', function(evt) {
         refresh();
     });
 }
