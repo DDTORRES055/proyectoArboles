@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arboles</title>
-    <link rel="stylesheet" href="styles/styles.css"/>
+    <link rel="stylesheet" href="styles/styles.css" />
 </head>
+
 <body>
-    
+    <div id="particles-js"></div>
     <div id="container"></div>
-    <button onclick="addNode()">add node</button>
-    <button onclick="addNodes()">add nodes</button>
+    <div id="options">
+        <input type="text" id="nameNode" placeholder="Nombre del nodo">
+        <button onclick="addNode()">Agregar nodo</button>
+        <button onclick="testTree()">Comprobar si es arbol</button>
+        <div id="response"></div>
+    </div>
+
+
 
     <script src="src/cytoscape.min.js"></script>
     <script src="src/lodash.js"></script>
     <script src="src/cytoscape-edgehandles.js"></script>
-    <script src="https://unpkg.com/dagre@0.7.4/dist/dagre.js"></script>
-    <script src="https://cytoscape.org/cytoscape.js-dagre/cytoscape-dagre.js"></script>
+    <script src="src/dagre.js"></script>
+    <script src="src/cytoscape-dagre.js"></script>
     <script src="src/app.js"></script>
+    <script src="src/particles.min.js"></script>
+    <script src="src/particles.js"></script>
 </body>
+
 </html>
